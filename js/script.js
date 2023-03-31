@@ -9,3 +9,15 @@ function createHtmlElement(htmlTag, classes){
 }
 
 console.log( createHtmlElement( "div", "blue-cell" ) )
+
+// get the #minefield element in html
+
+let minefield = document.getElementById("minefield");
+
+// for cycle
+
+for(let i = 1; i < 101; i++) {
+
+
+
+}
