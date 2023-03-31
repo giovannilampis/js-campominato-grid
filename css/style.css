@@ -1,7 +1,8 @@
 /* COLOR VARIABLES */
 
 :root {
-
+    --azure: rgb(93, 199, 236);
+    --yellow: rgb(246, 195, 68);
 }
 
 /* GENERAL*/
@@ -29,5 +30,14 @@ body {
 header,
 footer {
     height: 5rem;
-    background-color: turquoise;
+    background-color: var(--yellow);
+}
+
+#logo-container {
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+}
+
+.azure {
+    background-color: var(--azure);
 }
