@@ -33,6 +33,7 @@ header,
 footer {
     height: 5rem;
     background-color: var(--white);
+    line-height: 5rem;
 }
 
 #logo-container {
@@ -72,4 +73,8 @@ button {
 
 .pro-cell {
     width: calc(100% / 7);
+}
+
+a {
+    color: brown;
 }
