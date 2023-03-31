@@ -2,10 +2,16 @@
 
 // a function can create a generic html element with some certain classes
 
-function createHtmlElement(htmlTag, classes){
+function createHtmlElement(htmlTag, classes, text){
+
     let element = document.createElement( htmlTag );
+
     element.className = classes;
+
+    element.innerHTML = text;
+
     return element;
+
 }
 
 console.log( createHtmlElement( "div", "blue-cell" ) )
@@ -18,6 +24,6 @@ let minefield = document.getElementById("minefield");
 
 for(let i = 1; i < 101; i++) {
 
-    minefield.append( createHtmlElement( "div", "azure-cell" ) )
+    minefield.append( createHtmlElement( "div", "azure-cell", i ) )
 
 }
