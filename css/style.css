@@ -1,8 +1,10 @@
 /* COLOR VARIABLES */
 
 :root {
-    --azure: rgb(93, 199, 236);
+    --azure: rgb(131, 254, 208);
     --yellow: rgb(246, 195, 68);
+    --white: rgb(255, 255, 255);
+
 }
 
 /* GENERAL*/
@@ -24,18 +26,23 @@ img {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: var(--azure);
 }
 
 header,
 footer {
     height: 5rem;
-    background-color: var(--yellow);
+    background-color: var(--white);
 }
 
 #logo-container {
     width: 4rem;
     aspect-ratio: 1 / 1;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
 }
 
 #minefield {
@@ -46,13 +53,13 @@ footer {
 
 .azure-cell {
     background-color: var(--azure);
-    border: 1px dashed whitesmoke;
+    border: 1px solid black;
     width: calc(100% / 10);
     aspect-ratio: 1 / 1;
     cursor: pointer;
     text-align: center;
     line-height: 3rem;
-    color: whitesmoke;
+    color: black;
 }
 
 .beginner-cell {
