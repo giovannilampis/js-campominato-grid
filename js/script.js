@@ -1,8 +1,12 @@
 "use strict"
 
+// get the #play element in html
+
+const play = document.getElementById("play");
+
 // a function can create a generic html element with some certain classes
 
-function createHtmlElement(htmlTag, classes, text){
+function createHtmlElement(htmlTag, classes, text, elementWidth){
 
     let element = document.createElement( htmlTag );
 
