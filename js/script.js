@@ -10,6 +10,10 @@ play.addEventListener("click", function() {
 
     let minefield = document.getElementById("minefield");
 
+    // reset minefield on click to play
+
+    minefield.innerHTML = '';
+
     // for cycle
 
     for(let i = 1; i < 101; i++) {
