@@ -6,9 +6,6 @@ const play = document.getElementById("play");
 
 play.addEventListener("click", function() {
 
-
-  
-
     // get the #minefield element in html
 
     let minefield = document.getElementById("minefield");
@@ -19,25 +16,6 @@ play.addEventListener("click", function() {
 
         minefield.append( createHtmlElement( "div", "azure-cell", i ) );
 
-         // get the select element from html
-
-        const level = document.getElementById("level").value;
-
-        switch(level) {
-
-            case '1':
-            default:
-                element.classList.add("beginner-cell");
-                break;
-
-            case '2':
-                element.classList.add("advanced-cell");
-                break;
-
-            case '3':
-                element.classList.add("pro-cell");
-        }
-
     }
 
 })
@@ -45,13 +23,32 @@ play.addEventListener("click", function() {
 
 // a function can create a generic html element with some certain classes
 
-function createHtmlElement(htmlTag, classes, text){
+function createHtmlElement(htmlTag, classes, text, lev){
 
     let element = document.createElement( htmlTag );
 
     element.className = classes;
 
     element.innerHTML = text;
+
+    // get the select element from html
+
+    const level = document.getElementById("level").value;
+
+    switch(level) {
+
+        case '1':
+        default:
+           element.classList.add("beginner-cell");
+           break;
+
+        case '2':
+             element.classList.add("advanced-cell");
+             break;
+
+         case '3':
+             element.classList.add("pro-cell");
+     }
 
     return element;
 
