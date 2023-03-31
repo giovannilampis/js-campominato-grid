@@ -38,6 +38,16 @@ footer {
     aspect-ratio: 1 / 1;
 }
 
-.azure {
+#minefield {
+    width: 30rem;
+    aspect-ratio: 1 / 1;
+    margin: 1rem auto;
+}
+
+.azure-cell {
     background-color: var(--azure);
+    border: 1px dashed whitesmoke;
+    width: calc(100% / 10);
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
 }

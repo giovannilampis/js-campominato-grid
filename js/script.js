@@ -18,6 +18,6 @@ let minefield = document.getElementById("minefield");
 
 for(let i = 1; i < 101; i++) {
 
-
+    minefield.append( createHtmlElement( "div", "azure-cell" ) )
 
 }
