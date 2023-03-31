@@ -47,7 +47,7 @@ button {
 }
 
 #minefield {
-    width: 30rem;
+    width: 50rem;
     aspect-ratio: 1 / 1;
     margin: 1rem auto;
 }
