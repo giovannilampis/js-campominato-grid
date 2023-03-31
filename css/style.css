@@ -47,10 +47,21 @@ footer {
 .azure-cell {
     background-color: var(--azure);
     border: 1px dashed whitesmoke;
-    width: calc(100% / 10);
     aspect-ratio: 1 / 1;
     cursor: pointer;
     text-align: center;
     line-height: 3rem;
     color: whitesmoke;
+}
+
+.beginner-cell {
+    width: calc(100% / 10);
+}
+
+.advanced-cell {
+    width: calc(100% / 9);
+}
+
+.pro-cell {
+    width: calc(100% / 7);
 }
