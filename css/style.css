@@ -57,8 +57,10 @@ footer {
     width: calc(100% / 10);
     aspect-ratio: 1 / 1;
     cursor: pointer;
-    text-align: center;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* cell color when clicked */
