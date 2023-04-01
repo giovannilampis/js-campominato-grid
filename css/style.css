@@ -41,10 +41,7 @@ footer {
     aspect-ratio: 1 / 1;
 }
 
-button {
-    background-color: white;
-    border: 1px solid black;
-}
+/* minefield, where the cells will be appended to */
 
 #minefield {
     width: 50rem;
@@ -52,6 +49,8 @@ button {
     background-color: var(--white);
     margin: 1rem auto;
 }
+
+/* cell basic layout */
 
 .cell {
     border: 1px solid black;
@@ -63,21 +62,31 @@ button {
     color: black;
 }
 
+/* cell color when clicked */
+
 .azure {
     background-color: var(--azure);
 }
+
+/* cell size for beginner level */
 
 .beginner-cell {
     width: calc(100% / 10);
 }
 
+/* cell size for advanced level */
+
 .advanced-cell {
     width: calc(100% / 9);
 }
 
+/* cell size for pro level */
+
 .pro-cell {
     width: calc(100% / 7);
 }
+
+/* anchor elements color */
 
 a {
     color: brown;
