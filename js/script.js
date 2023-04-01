@@ -37,8 +37,6 @@ function createHtmlElement(htmlTag, classes, text){
 
     element.className = classes;
 
-    element.innerHTML = text;
-
     // get the select element from html
 
     const level = document.getElementById("level").value;
@@ -57,6 +55,11 @@ function createHtmlElement(htmlTag, classes, text){
          case '49':
              element.classList.add("pro-cell");
      }
+
+     element.addEventListener("click", function() {
+        this.classList.add("azure");
+        this.innerHTML = text;
+     })
 
     return element;
 
