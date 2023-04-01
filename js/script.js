@@ -22,7 +22,7 @@ play.addEventListener("click", function() {
 
     for(let i = 1; i <= level; i++) {
 
-        minefield.append( createHtmlElement( "div", "azure-cell", i ) );
+        minefield.append( createHtmlElement( "div", "cell", i ) );
 
     }
 

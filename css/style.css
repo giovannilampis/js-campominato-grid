@@ -49,11 +49,11 @@ button {
 #minefield {
     width: 50rem;
     aspect-ratio: 1 / 1;
+    background-color: var(--white);
     margin: 1rem auto;
 }
 
-.azure-cell {
-    background-color: var(--azure);
+.cell {
     border: 1px solid black;
     width: calc(100% / 10);
     aspect-ratio: 1 / 1;
@@ -61,6 +61,10 @@ button {
     text-align: center;
     line-height: 3rem;
     color: black;
+}
+
+.azure {
+    background-color: var(--azure);
 }
 
 .beginner-cell {
