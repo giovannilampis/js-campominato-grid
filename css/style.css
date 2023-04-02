@@ -1,10 +1,9 @@
 /* COLOR VARIABLES */
 
 :root {
-    --azure: rgb(131, 254, 208);
-    --yellow: rgb(246, 195, 68);
-    --white: rgb(255, 255, 255);
-
+    --background: rgb(131, 254, 208);
+    --head-foot: rgb(255, 255, 255);
+    --black : rgb(12, 12, 12);
 }
 
 /* GENERAL*/
@@ -26,13 +25,13 @@ img {
 }
 
 body {
-    background-color: var(--azure);
+    background-color: gold;
 }
 
 header,
 footer {
     height: 5rem;
-    background-color: var(--white);
+    background-color: var(--head-foot);
     line-height: 5rem;
 }
 
@@ -46,18 +45,18 @@ footer {
 #minefield {
     width: 50rem;
     aspect-ratio: 1 / 1;
-    background-color: var(--white);
+    background-color: var(--head-foot);
     margin: 1rem auto;
 }
 
 /* cell basic layout */
 
 .cell {
-    border: 1px solid black;
+    border: 1px solid var(--background);
     width: calc(100% / 10);
     aspect-ratio: 1 / 1;
     cursor: pointer;
-    color: black;
+    color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +65,7 @@ footer {
 /* cell color when clicked */
 
 .azure {
-    background-color: var(--azure);
+    background-color: var(--background);
 }
 
 /* cell size for beginner level */
